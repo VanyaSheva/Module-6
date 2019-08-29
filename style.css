@@ -183,11 +183,13 @@ h2::after{
 .hover-list-item{
     width: 56px;
     height: 56px;
-    border-right:1px solid #f38181;
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.4s ease-out;
     cursor: pointer;
+}
+.hover-list-item:not(:last-child){
+    border-right:1px solid #f38181
 }
 .facebook{
     background-image: url("img/facebook.png");
@@ -244,9 +246,14 @@ footer{
     color: #f38181;
     text-decoration: none;
 }
+.form{
+    display: flex;
+    width: 380px;
+    align-items: center;
+}
 input {
     width: 230px;
-    height: 40px;
+    height: 38px;
     border: 1px solid #e7e7e7;
     background-color: #ffffff;
     padding-left: 13px;
@@ -258,4 +265,15 @@ input::placeholder{
     font-weight: 300;
     line-height: 24px;
     font-style: italic;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: #95e1d3;
+    border: 0;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
